@@ -58,7 +58,7 @@ public class TeacherDaoImplementation implements TeacherDao {
 
 	@Override
 	public Teacher fetchTeacherById(int id) {
-		Optional<Teacher> optional = repositry.findById(null);
+		Optional<Teacher> optional = repositry.findById(id);
 
 		return optional.orElseThrow(
 				() -> new EntityNotPresentexception("Entity Not present With the id Which You Passed " + id));

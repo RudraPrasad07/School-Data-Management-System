@@ -48,20 +48,20 @@ public class TeacherServiceImplementation implements TeacherService {
 	@Override
 	public ResponseStructure<List<Teacher>> fetchTeacherByclassName(String Classname) {
 		List<Teacher> list = dao.fetchTeacherByclassName(Classname);
-		return new ResponseStructure<List<Teacher>>(200, "Teacher Data Saved Sucessfullyin the Database", list,
+		return new ResponseStructure<List<Teacher>>(200, "Teacher Data Fetched Sucessfullyin the Database", list,
 				LocalDateTime.now());
 	}
 
 	@Override
 	public ResponseStructure<Teacher> deleteByID(int id) {
 		dao.deleteByID(id);
-		return new ResponseStructure<Teacher>(204,"Teacher Data Saved Sucessfullyin the Database",null,LocalDateTime.now());
+		return new ResponseStructure<Teacher>(204,"Teacher Data Deleted Sucessfully From the Database",null,LocalDateTime.now());
 	}
 
 	@Override
 	public ResponseStructure<Teacher> deleteByNumber(String number) {
 		dao.deleteByNumber(number);
-		return new ResponseStructure<Teacher>(204,"Teacher Data Saved Sucessfullyin the Database",null,LocalDateTime.now());
+		return new ResponseStructure<Teacher>(204,"Teacher Data Deleted Sucessfully From the Database",null,LocalDateTime.now());
 	}
 
 }
