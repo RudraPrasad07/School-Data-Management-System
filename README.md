@@ -150,7 +150,7 @@ spring.jpa.show-sql=true
 </br>
   <div align="center">
 
- ***Thank You! checking out my project! 🙏***
+ ***Thank You! For checking out my project! 🙏***
 
 
 
