@@ -144,7 +144,7 @@ spring.jpa.show-sql=true
     mvn test
     ```
     
-### - Contributing
+###  ***Contributing***
    **Feel free to contribute or provide feedback. Your support is greatly appreciated!**
 
 </br>
